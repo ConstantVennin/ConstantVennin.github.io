@@ -124,8 +124,11 @@ h5 {
 }
 
 .progress {
-  vertical-align: middle;
+  margin-top: 7%;
 }
+
+
+
 
 .btn-perso-dl{
   background-color: #003566;
