@@ -114,17 +114,18 @@ h5 {
 }
 
 .imageComp {
-  max-width: 100%;
+  max-width: 90%;
   display: block;
 }
 
 .compCont{
   display: inline-flex !important;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .progress {
-  margin-top: 7%;
+  margin-top: 6%;
 }
 
 
