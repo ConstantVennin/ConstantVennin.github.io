@@ -131,12 +131,13 @@ h5 {
 
 .card-text{
   font-size: 1em;
-  color: #003566;
+  color: #003566!important;
 }
 
 .card{
   margin-top: 40px;
   margin-left: 20px;
+  background-color: #ffc300!important;
 }
 
 .card-title{
