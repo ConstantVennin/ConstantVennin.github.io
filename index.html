@@ -1,429 +1,405 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> Constant Vennin ! </title>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles/js/bootstrap.popper.min.js">
-  <link rel="stylesheet" href="styles/css/bootstrap.css">
-  <link rel="stylesheet" href="styles/js/bootstrap.min.js">
-  <link rel="stylesheet" href="styles/perso/style1.css">
-  <link rel="stylesheet" href="styles/perso/styleCadre.css">
-  <!-- couleurs : "Rich Black FOGRA 29":"000814","Oxford Blue":"001d3d","Prussian Blue":"003566","Mikado Yellow":"ffc300","Gold Web Golden":"ffd60a" -->
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sommaire.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/presentation.css">
+    <link rel="stylesheet" href="css/stickyMenu.css">
+    <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="css/competences.css">
+    <link rel="stylesheet" href="css/experiences.css">
+    <link rel="stylesheet" href="css/langues.css">
+    <title>Constant Vennin</title>
+</head>
 <body>
 
-<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-  <div id="liveToast" class="toast" data-bs-delay="100000" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-body">
-      Visionnez mon CV au format PDF !
-      <div class="mt-2 pt-2 border-top">
-        <button type="button" class="btn btn-primary btn-sm btn-perso-dl">
-          <a href="CV.pdf">CV.pdf</a>
-        </button>
-        <button type="button" class="btn btn-secondary btn-sm btn-perso-fermer" data-bs-dismiss="toast">Fermer</button>
-      </div>
+    <div class="position-fixed bottom-3 end-3 p-3" style="z-index: 9995">
+        <div id="liveToast" class="toast" data-bs-delay="100000" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body">
+                Visionnez mon CV au format PDF !
+                <div class="mt-2 pt-2 border-top">
+                    <button type="button" class="btn btn-primary btn-sm btn-perso-dl">
+                        <a href="CV.pdf">CV.pdf</a>
+                    </button>
+                    <button type="button" class="btn btn-secondary btn-sm btn-perso-fermer" data-bs-dismiss="toast">Fermer</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+      
+    <script type="text/javascript">
+        var toastLiveExample = document.getElementById('liveToast')
+        var toast = new bootstrap.Toast(toastLiveExample)
+        toast.show()
+    </script>
 
-<script type="text/javascript">
-  var toastLiveExample = document.getElementById('liveToast')
-  var toast = new bootstrap.Toast(toastLiveExample)
-  toast.show()
-</script>
-
-  <div class="container-fluid">
-
-
-    <div class="row nav">
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Menu</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="#competences">Compétences</a>
-              <a class="nav-link" href="#projets">Projets</a>
-              <a class="nav-link" href="#experience">Expériences</a>
-              <a class="nav-link" href="#langues">Langues</a>
-            </div>
-          </div>
+    <header>
+        <div class="presentation">
+            <img class="profil" src="images/Constant.png" alt="photo de profil">
+            <h1>Constant Vennin</h1>
+            <h2>Étudiant informatique</h2>
+            <h3>20 ans</h3>
+            <a href="#sommaire"><img class="scroll-arrow" src="images/chevron-down.svg" alt="scrollez"></a>
         </div>
-      </nav>
+    </header>
+    <div class="sections">
+        <section id="sommaire" class="sommaire">
+            <h1>Sommaire</h1>
+            <ul>
+                <a href="#presentation"><li>Présentation</li></a>
+                <a href="#projets"><li>Projets</li></a>
+                <a href="#competences"><li>Compétences</li></a>
+                <a href="#experiences"><li>Expériences</li></a>
+                <a href="#langues"><li>Langues</li></a>
+            </ul>
+        </section>
+        <section id="presentation" class="presentation">
+            <div class="separate"></div>
+            <h1>Présentation</h1>
+            <div class="jeuDeCartes">
+                <div class="carte">
+                    <h2>Qui suis-je ?</h2>
+                    <p>Je m'appelle Constant Vennin, j'ai 20 ans. Je suis actuellement à la recherche d'une entreprise afin de m'accompagner pour mon alternance</p>
+                </div>
+                <div class="carte">
+                    <h2>Quel est mon parcours scolaire ?</h2>
+                    <p>J'ai obtenu mon baccalauréat en juin 2020, il s'agit d'un bac S option Sciences de l'Ingénieur avec une spécialité mathématiques. J'ai ensuite candidaté pour un DUT informatique à l'IUT A de Lille.</p>
+                </div>
+                <div class="carte">
+                    <h2> Quel est mon projet professionnel ?</h2>
+                    <p>J'aspire actuellement à devenir développeur. Je n'ai pas de domaine précis encore bien défini, mais j'ai une préférence pour tout ce qui touche au Web. Je suis ouvert à l'idée de travailler dans un pays autre que la France (États-Unis d'Amérique et Norvège en tête)</p>
+                </div>
+            </div>
+        </section>
+        <section id="projets" class="projets">
+            <div class="separate"></div>
+            <h1>Projets</h1>
+            <div class="projetList">
+                <div class="projet">
+                    <h2>Modélisation</h2>
+                    <p>Démo vidéo</p>
+                    <div class="video-container">
+                        <iframe width="90%" height="auto" src="https://www.youtube.com/embed/7eebc90WGFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Compétences</h3>
+                    <div class="labelContainer">
+                        <label class="red">Java</label>
+                        <label class="red">Maven</label>
+                        <label class="red">Maths Modélisation</label>
+                        <label class="red">agile</label>
+                        <label class="red">java fx</label>
+                        <label class="red">Git</label>
+                    </div>
+                    <h3>Résumé</h3>
+                    <p>Le projet modélisation a débuté en début de seconde année de DUT. Il rassemble méthode Agile, travail d'équipe, compétences en Java, compétences en modélisation. L'application que nous avons créé permet de lire des fichiers au format PLY, et de les afficher avec une vue 3D.</p>
+                    <a class="button-cv" href="https://github.com/ConstantVennin/modelisation" target="_blank"><div>voir le code</div></a>
+                </div>
+                <div class="projet">
+                    <h2>Start Up Week<br>L'Âme en Pause</h2>
+                    <p>Screen du site</p>
+                    <a href="https://pro.ame-en-pause.fr/formations" target="_blank"><img src="images/ame-en-pause.png" alt="ame-en-pause"></a>
+                    <h3>Compétences</h3>
+                    <div class="labelContainer">
+                        <label class="red">Java</label>
+                        <label class="red">Maven</label>
+                        <label class="red">API REST</label>
+                        <label class="red">Javascript</label>
+                        <label class="red">single page app</label>
+                        <label class="red">agile</label>
+                        <label class="red">canva</label>
+                        <label class="red">Git</label>
+                        <label class="red">NodeJS</label>
+                        <label class="red">html</label>
+                        <label class="red">css</label>
+                        <label class="red">Android Studio</label>
+                    </div>
+                    <h3>Résumé</h3>
+                    <p>Le projet effectué pour la Start Up Week a clôturé ma présence à l'IUT (le stage arrivant après), en mobilisant la majorité des connaissances acquises durant l'année. En équipe, j'ai mené ce projet pour une prestataire dont il a fallu comprendre les besoins. Vous pouvez découvrir ce projet en cliquant sur l'image.</p>
+                </div>
+                <div class="projet">
+                    <h2>LightFlix</h2>
+                    <p>Démo vidéo</p>
+                    <div class="video-container">
+                        <iframe width="1520" height="549" src="https://www.youtube.com/embed/AfPxpPqQqag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Compétences</h3>
+                    <div class="labelContainer">
+                        <label class="red">Javascript</label>
+                        <label class="red">single page app</label>
+                        <label class="red">html</label>
+                        <label class="red">css</label>
+                        <label class="red">Git</label>
+                        <label class="red">bootstrap</label>
+                        <label class="red">NodeJS</label>
+                    </div>
+                    <h3>Résumé</h3>
+                    <p>Le projet LightFlix s'est présenté à nous lors du dernier cours de Javascript. Nous avons créé un site communiquant avec une api, afin d'afficher un catalogue de séries, et d'effectuer des traitements dessus, comme présenté dans la démo.</p>
+                    <a class="button-cv" href="https://github.com/ConstantVennin/LightFlix" target="_blank"><div>voir le code</div></a>
+                </div>
+            </div>
+        </section>
+        <section id="competences" class="competences">
+            <div class="separate"></div>
+                <h1 class="center" id="competences">Compétences</h1>
+                <div class="row">
+                    <div class="row legende">
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+                            </div>
+                            <center><h5>Débutant</h5></center>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                            </div>
+                            <center><h5>Intermédiaire</h5></center>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                            </div>
+                            <center><h5>Très bon niveau</h5></center>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                            </div>
+                            <center><h5>Confirmé</h5></center>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 algo">
+                        <h1 class="center">Algorithmie</h1>
+
+                        <div class="container compCont">
+                            <div class="col-2">
+                            <img src="images/java.png" alt="java" class="imageComp">
+                            </div>
+                            <div class="col-10 progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="container compCont">
+                            <div class="col-2">
+                            <img src="images/c.png" alt="C" class="imageComp">
+                            </div>
+                            <div class="col-10 progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                        <div class="container compCont">
+                            <div class="col-2">
+                            <img src="images/cobol.png" alt="cobol" class="imageComp">
+                            </div>
+                            <div class="col-10 progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+                            </div>
+                        </div>
+
+                        <div class="container compCont">
+                            <div class="col-2">
+                            <img src="images/python.png" alt="python" class="imageComp">
+                            </div>
+                            <div class="col-10 progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 bdd">
+                        <h1 class="center">Bases de données</h1>
+
+                        <div class="container compCont">
+                            <div class="col-2">
+                            <img src="images/sql.png" alt="sql" class="imageComp">
+                            </div>
+                            <div class="col-10 progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="container compCont">
+                            <div class="col-2">
+                            <img src="images/j2e.png" alt="j2e" class="imageComp">
+                            </div>
+                            <div class="col-10 progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                            </div>
+                        </div>
+
+                        <div class="container compCont">
+                            <div class="col-2">
+                            <img src="images/spring.png" alt="spring boot" class="imageComp">
+                            </div>
+                            <div class="col-10 progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 web">
+                        <h1 class="center">Web</h1>
+
+                        <div class="container compCont">
+                        <div class="col-2">
+                            <img src="images/html.png" alt="html" class="imageComp">
+                        </div>
+                        <div class="col-10 progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+                        </div>
+                        </div>
+
+                        <div class="container compCont">
+                        <div class="col-2">
+                            <img src="images/css.png" alt="css" class="imageComp">
+                        </div>
+                        <div class="col-10 progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+                        </div>
+                        </div>
+
+                        <div class="container compCont">
+                            <div class="col-2">
+                                <img src="images/js.png" alt="js" class="imageComp">
+                            </div>
+                            <div class="col-10 progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                            </div>
+                            </div>
+
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 systeme">
+                        <h1 class="center">Système</h1>
+
+                        <div class="container compCont">
+                            <div class="col-2">
+                            <img src="images/shell.png" alt="shell" class="imageComp">
+                            </div>
+                            <div class="col-10 progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                        <div class="container compCont">
+                            <div class="col-2">
+                            <img src="images/reseau.png" alt="reseau" class="imageComp">
+                            </div>
+                            <div class="col-10 progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        <section id="experiences" class="experiences">
+            <div class="separate"></div>
+            <h1>Experiences</h1>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Stage en Norvège &nbsp;<img width="20px" src="images/norvege.png" alt="NO">
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Dans le cadre de mon stage de DUT, j'ai décidé d'effectuer mon stage en Erasmus en Norvège.</strong> Ce stage s'effectue durant les mois d'avril, mai, et juin. <br>
+                      En pleine immersion à Trondheim, et vivant en collocation dans une résidence étudiante internationale, je peux exercer mon anglais. Les images utilisées dans ce CV Web sont d'ailleurs les miennes, prisent là-bas. J'ai donc l'occasion d'y découvrir la vie quotidienne, les paysages, et un peu la langue norvégienne. <br>
+                      Le sujet de mon stage est un projet pour le laboratoire de recherche, qui vise à créer un serveur REST permettant de communiquer avec un tapis de course, dans le cadre d'étude sur la réalité virtuelle. 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Animateur en centre de loisir
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Dans la petite ville de Bois-Grenier,</strong> j'ai depuis 4 ans exercé le métier d'animateur durant les petites vacances mais surtout les grandes vacances.<br>
+                        J'y ai cumulé environ 5 mois d'activité.
+                        Mon rôle consistait à créer des activités physiques et manuelles, adaptées à des enfants de tous âges (3 à 13 ans), puis à les encadrer durant ces activités tout en en veillant à leur sécurité.<br>
+                        Ce métier requiert une très bonne imagination et de la rigueur (en effet l'encadrement ne peut pas se prendre à la légère et il faut assumer sa responsabilité).<br>
+                        Ces expériences en tant qu'animateur m'ont apporté beaucoup d'aisance à l'oral.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Livreur chez Peppino
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Chez Peppino Pizza.</strong> Depuis novembre 2021, je consacre douze heures par semaine de vendredi à dimanche à livrer des pizzas.<br>
+                        Préparation de commande (être organisé), livraison (faire preuve d'initiative et d'improvisation), accueil du client (faire preuve de politesse et une bonne présentation), être vigilant à la propreté des locaux.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </section>
+
+        <section id="langues" class="langues">
+            <div class="separate"></div>
+            <h1>Langues</h1>
+            <h2>Passez votre souris sur les drapeaux !</h2>
+            <h4>Ou cliquez si vous êtes sur mobile</h4>
+            <div class="group-langue">
+                <div class="langue">
+                    <img width="360" height="240" src="images/france.png" alt="français">
+                    <div class="niveau">
+                        <h2>Langue maternelle</h2>
+                        <h4>Excellent niveau à l'écrit</h4>
+                    </div>
+                    
+                </div>
+                <div class="langue">
+                    <img width="360" height="240" src="images/anglais.png" alt="anglais">
+                    <div class="niveau">
+                        <h2>niveau B2</h2>
+                        <h4>Utilisateur indépendant</h4>
+                    </div>
+                
+                </div>
+                <div class="langue">
+                    <img width="360" height="240" src="images/allemand.png" alt="allemand">
+                    <div class="niveau">
+                        <h2>Niveau B1</h2>
+                        <h4>Intermédiaire</h4>
+                    </div>
+                    
+                </div>
+                <div class="langue">
+                    <img width="360" height="240" src="images/norvege.png" alt="norvégien">
+                    <div class="niveau">
+                        <h2>Débutant</h2>
+                        <h4>Vocabulaire élémentaire et mots de la vie courante</h4>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
     </div>
+    <footer>
 
-    <div class="container">
-
-
-      <div class="row description">
-        <h1 class="display-1">Description</h1>
-        <p>Bonjour ! Je m'appelle Constant VENNIN, j'ai 19 ans, je suis étudiant en informatique. Vous vous apprêtez à lire mon CV Web !</p>
-        <p>Je suis à la recherche d'un stage débutant en avril et se terminant en juin 2022. Ainsi que d'une alternance pour accompagner ma poursuite d'études l'année prochaine.</p>
-      </div>
-
-      <div class="row section">
-        <h1 class="display-1 center" id="competences">Compétences</h1>
-
-        <div class="row">
-          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
-            </div>
-            <center><h5>Débutant</h5></center>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-            </div>
-            <center><h5>Intermédiaire</h5></center>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-            </div>
-            <center><h5>Très bon niveau</h5></center>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-            </div>
-            <center><h5>Confirmé</h5></center>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 algo">
-          <h1 class="display-5 center">Algorithmie</h1>
-
-          <div class="container compCont">
-            <div class="col-2">
-              <img src="images/java.png" alt="java" class="imageComp">
-            </div>
-            <div class="col-10 progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-            </div>
-          </div>
-
-          <div class="container compCont">
-            <div class="col-2">
-              <img src="images/c.png" alt="C" class="imageComp">
-            </div>
-            <div class="col-10 progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-            </div>
-          </div>
-
-          <div class="container compCont">
-            <div class="col-2">
-              <img src="images/cobol.png" alt="cobol" class="imageComp">
-            </div>
-            <div class="col-10 progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
-            </div>
-          </div>
-
-          <div class="container compCont">
-            <div class="col-2">
-              <img src="images/python.png" alt="python" class="imageComp">
-            </div>
-            <div class="col-10 progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 bdd">
-          <h1 class="display-5 center">Bases de données</h1>
-
-          <div class="container compCont">
-            <div class="col-2">
-              <img src="images/sql.png" alt="sql" class="imageComp">
-            </div>
-            <div class="col-10 progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-            </div>
-          </div>
-
-          <div class="container compCont">
-            <div class="col-2">
-              <img src="images/j2e.png" alt="j2e" class="imageComp">
-            </div>
-            <div class="col-10 progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 web">
-          <h1 class="display-5 center">Web</h1>
-
-            <div class="container compCont">
-              <div class="col-2">
-                <img src="images/html.png" alt="html" class="imageComp">
-              </div>
-              <div class="col-10 progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
-              </div>
-            </div>
-
-            <div class="container compCont">
-              <div class="col-2">
-                <img src="images/css.png" alt="css" class="imageComp">
-              </div>
-              <div class="col-10 progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-              </div>
-            </div>
-
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 systeme">
-          <h1 class="display-5 center">Système</h1>
-
-          <div class="container compCont">
-            <div class="col-2">
-              <img src="images/shell.png" alt="shell" class="imageComp">
-            </div>
-            <div class="col-10 progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-            </div>
-          </div>
-
-          <div class="container compCont">
-            <div class="col-2">
-              <img src="images/reseau.png" alt="reseau" class="imageComp">
-            </div>
-            <div class="col-10 progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="row">
-
-        <h1 class="display-1 center" id="projets">Projets</h1>
-        <div class="row">
-
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <div class="card">
-              <iframe class="card-img-top" height="240" src="https://www.youtube.com/embed/hZtbdDQeERQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <!--<img src="..." class="card-img-top" alt="...">-->
-              <div class="card-body">
-                <h5 class="card-title">Projet IHM</h5>
-                <span class="badge">Java</span>
-                <span class="badge">JavaFX</span>
-                <p class="card-text">Le projet consistait à produire une IHM capable de choisir des couleurs de multiples manières, et d'en faire un rendu en noir et blanc. Ce afin d'aider l'utilisateur à choisir des couleurs se différenciants suffisamment une fois en noir et blanc</p>
-                <a href="https://github.com/ConstantVennin/IHM-Color" target="_blank" class="btn btn-primary">Voir le code</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <div class="card">
-              <img src="images/lineup.png" class="card-img-top" alt="lineup">
-              <div class="card-body">
-                <h5 class="card-title">LineUp3</h5>
-                <span class="badge">Agile</span>
-                <span class="badge">Java</span>
-                <span class="badge">JavaFX</span>
-                <p class="card-text">LineUp3 est un jeu de plateau que nous avons concrétisé en équipe en fin de première année de DUT. Nous avons utilisé la méthode Agile pour y parvenir, ce qui m'a permis d'apprendre à utiliser cette méthode. Mon abilité avec le langage Java et le travail d'équipe s'en est renforcée.</p>
-                <a href="https://github.com/ConstantVennin/LineUp3" target="_blank" class="btn btn-primary">Voir le code</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <div class="card">
-              <iframe class="card-img-top" height="240" src="https://www.youtube.com/embed/s7SXVZvD2NU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              <!--<img src="..." class="card-img-top" alt="...">-->
-              <div class="card-body">
-                <h5 class="card-title">Modélisation PLY</h5>
-                <span class="badge">Agile</span>
-                <span class="badge">Java</span>
-                <span class="badge">JavaFX</span>
-                <span class="badge">Maven</span>
-                <p class="card-text">Le projet modélisation a débuté en début de seconde année de DUT. Il rassemble méthode Agile, travail d'équipe, compétences en Java, compétences en modélisation. L'application que nous avons créé permet de lire des fichiers au format PLY, et de les afficher avec une vue 3D.</p>
-                <a href="https://github.com/ConstantVennin/modelisation" target="_blank" class="btn btn-primary">Voir le code</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="row justify-content-center section">
-        <h1 class="center display-1" id="experience">Expérience</h1>
-        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/animateur.png" class="d-block w-100" alt="Centre de Loisir">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Animateur</h5>
-                  <p>En centre de loisir dans le village de Bois-Grenier</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/unis.png" class="d-block w-100" alt="unis">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>UNIS</h5>
-                  <p>Stage d'observation</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/peppino.png" class="d-block w-100" alt="peppino">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Livreur à domicile</h5>
-                  <p>Chez Peppino Pizza</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                <strong>Animateur en Centre de loisirs</strong>
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Dans la petite ville de Bois-Grenier,</strong> j'ai depuis 4 ans exercé le métier d'animateur durant les petites vacances mais surtout les grandes vacances.<br>
-                J'y ai cumulé environ 5 mois d'activité.
-                Mon rôle consistait à créer des activités physiques et manuelles, adaptées à des enfants de tous âges (3 à 13 ans), puis à les encadrer durant ces activités tout en en veillant à leur sécurité.<br>
-                Ce métier requiert une très bonne imagination et de la rigueur (en effet l'encadrement ne peut pas se prendre à la légère et il faut assumer sa responsabilité).<br>
-                Ces expériences en tant qu'animateur m'ont apporté beaucoup d'aisance à l'oral.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <strong>Stage d'observation chez UNIS</strong>
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Durant mon année de seconde,</strong> j'ai eu l'opportunité d'effectuer mon stage d'observation à Villeneuve d'Ascq, chez UNIS.<br>
-                UNIS est une entreprise de services numériques. Les locaux regroupent de nombreux corps de métiers liés à l'informatique.<br>
-                Je voyais pour la première fois en quoi consistait ces différents métiers. Cela m'a conforté dans l'idée de poursuivre dans cette voie et d'en apprendre plus.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <strong>Livraison à domicile</strong>
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Chez Peppino Pizza.</strong> Depuis novembre 2021, je consacre douze heures par semaine de vendredi à dimanche à livrer des pizzas.<br>
-                Préparation de commande (être organisé), livraison (faire preuve d'initiative et d'improvisation), accueil du client (faire preuve de politesse et une bonne présentation), être vigilant à la propreté des locaux.
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-
-
-
-      <div class="row langue">
-          <h1 class="display-1 center" id="langues">Langues</h1>
-          <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3">
-            <div class="gallerie_intro_hover ">
-              <p style="text-align:center;">
-                <img src="images/france.png" class="img-fluid" alt="francais">
-              </p>
-              <div class="caption">
-                <div class="blur"></div>
-                <div class="caption-text">
-                  <h3 class="titre-langue">Français</h3>
-                  <p>Langue maternelle, excellent niveau à l'écrit</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="gallerie_intro_hover">
-              <p style="text-align:center;">
-                <img src="images/anglais.png" class="img-fluid" alt="anglais">
-              </p>
-              <div class="caption">
-                <div class="blur"></div>
-                <div class="caption-text">
-                  <h3 class="titre-langue">Anglais</h3>
-                  <p>Niveau avancé, utilisateur indépendant</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="gallerie_intro_hover">
-              <p style="text-align:center;">
-                <img src="images/allemand.png" class="img-fluid" alt="allemand">
-              </p>
-              <div class="caption">
-                <div class="blur"></div>
-                <div class="caption-text">
-                  <h3 class="titre-langue">Allemand</h3>
-                  <p>Niveau intermédiaire</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="gallerie_intro_hover">
-              <p style="text-align:center">
-                <img src="images/norvege.png" class="img-fluid" alt="norvegien">
-              </p>
-              <div class="caption">
-                <div class="blur"></div>
-                <div class="caption-text">
-                  <h3 class="titre-langue">Norvégien</h3>
-                  <p>En découverte, expressions simples, vocabulaire élémentaire</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-      </div>
-
-
-
-
-
-
-    </div>
-  </div>
-  </body>
+    </footer>
+</body>
 </html>

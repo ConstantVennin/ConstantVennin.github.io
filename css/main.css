@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root{
+    --cv-dark-green:#00205B;
+    --cv-light-green:#00308a;
+    --cv-light-red:#791919;
+    --cv-dark-red:#580808;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins";
+    margin: 0;
+    color : #eee;
+}
+
+body h1 {
+    font-size: 50px;
+}
+
+body div.separate {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: #eee;
+}
+
+body label{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+body label.green {
+    background-color: var(--cv-dark-green);
+}
+
+body label.red {
+    background-color: var(--cv-dark-red);
+}
+
+body .labelContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body .button-cv {
+    text-decoration: none;
+    color: #eee;
+    border-radius: 5px;
+}
+
+body .button-cv div {
+    background-color: var(--cv-light-red);
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+body .button-cv div:hover {
+    box-shadow: 0px 0px 0px 5px var(--cv-dark-red);
+}
+
+.center {
+    text-align: center;
+}
+
+.toast {
+    margin: 0;
+    background-color: var(--cv-dark-red);
+    font-weight: bold;
+    z-index: 9999;
+}
+
+.btn-primary {
+    background-color: var(--cv-light-red);
+    border-color: var(--cv-light-green);
+}
+
+.btn-primary:hover {
+    background-color: var(--cv-light-green);
+    border-color: var(--cv-dark-green);
+}
+
+.btn-secondary {
+    background-color: var(--cv-dark-green);
+    border-color: var(--cv-light-green);
+}
+
+.btn-primary a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}

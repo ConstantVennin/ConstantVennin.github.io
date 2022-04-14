@@ -1,0 +1,59 @@
+body > .sections > .langues {
+    background: linear-gradient(to bottom, var(--cv-dark-green), #79191960), url('../images/nidaroscathedral.jpg') no-repeat center center;
+    background-size: cover; 
+
+}
+
+body > .sections > .langues h1 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+body > .sections > .langues h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body > .sections > .langues h4 {
+    text-align: center;
+}
+
+body > .sections > .langues .group-langue {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+body > .sections > .langues .group-langue div.langue {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+body > .sections > .langues .group-langue div.langue img {
+    width: 360px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+body > .sections > .langues .group-langue div.langue .niveau {
+    display: none;
+    border-radius: 10px;
+}
+
+body > .sections > .langues .group-langue div.langue:hover .niveau {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 360px;
+    height: 240px;
+    z-index: 400;
+    background-color: rgba(15,15,15,0.7);
+}
+
+body > .sections > .langues .group-langue div.langue .niveau h4 {
+    text-align: center;
+    margin-top: 30px;
+}
