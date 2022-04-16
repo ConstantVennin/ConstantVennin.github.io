@@ -1,0 +1,29 @@
+body > footer {
+    border-top: solid 4px #eee;
+    background-color: var(--cv-dark-red);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+} 
+
+body > footer > h1 {
+    margin: 0;
+    padding-bottom: 20;
+    padding-right: 30px;
+}
+
+body > footer > ul {
+    list-style: none;
+    border-left: #eee solid 2px;
+}
+
+body > footer > ul a {
+    color: #eee;
+}
+
+body > footer > ul a:hover {
+    color: #fff;
+}
