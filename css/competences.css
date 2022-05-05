@@ -12,46 +12,57 @@
     }
 }
 
-.progress-bar {
-    background-color: var(--cv-light-red);
-}
-
 body > .sections > .competences h1 {
     color: white;
     text-shadow: 0px 0px 2px white;
     margin-top: 50px;
 }
 
-.compCont {
-    display: inline-flex !important;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    vertical-align: middle;
-}
-
-.progress{
-    margin-bottom: 5%;
-    height: 20px;
-    margin-top: 5%;
-    background-color: var(--cv-dark-green);
-    box-shadow: 0px 0px 0px 2px white;
-}
-
-.imageComp {
-    max-width: 90%;
-    display: block;
-    max-height: 80px;
-}
-
-.legende {
-    margin-left: 3px;
-    margin-right: 10px
-}
-
-body .sections .competences .row div {
+body > .sections > .competences h3 {
     margin: 0;
 }
 
-body .sections .competences .row{
-    max-width: 100%;
+body > .sections > .competences .competenceUnique {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+body > .sections > .competences .competenceUnique h3 {
+    display: none;
+    
+}
+
+body > .sections > .competences .competenceUnique:hover h3 {
+    display: block;
+    position: absolute;
+    background-color: #eee;
+    border-radius: 10px;
+    color: black;
+    padding: 5px;
+    border: black solid 4px;
+    box-shadow: 0px 0px 4px 0px black;
+}
+
+body > .sections > .competences .competenceUnique img {
+    position: inherit;
+    padding: 10%;
+    width: 90%;
+    transition: all 0.3s;
+}
+
+body > .sections > .competences .competenceUnique:hover img {
+    transform: scale(110%);
+}
+
+body > .sections > .competences .ListeCompetences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

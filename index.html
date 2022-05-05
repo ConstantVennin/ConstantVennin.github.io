@@ -23,7 +23,7 @@
 </head>
 <body>
 
-    <div class="position-fixed bottom-3 end-3 p-3" style="z-index: 9995">
+    <div class="position-fixed bottom-2 end-2 p-3" style="z-index: 9995">
         <div id="liveToast" class="toast" data-bs-delay="100000" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-body">
                 Visionnez mon CV au format PDF !
@@ -63,6 +63,14 @@
                 <a href="#langues"><li>Langues</li></a>
             </ul>
         </section>
+        <!--<section class="hiddingBlock"></section>
+        <section id="pn-navigation-bar" class="stickyMenu">
+            <a href="#presentation"><li>Présentation</li></a>
+            <a href="#projets"><li>Projets</li></a>
+            <a href="#competences"><li>Compétences</li></a>
+            <a href="#experiences"><li>Expériences</li></a>
+            <a href="#langues"><li>Langues</li></a>
+        </section>-->
         <section id="presentation" class="presentation">
             <div class="separate"></div>
             <h1>Présentation</h1>
@@ -77,7 +85,7 @@
                 </div>
                 <div class="carte">
                     <h2> Quel est mon projet professionnel ?</h2>
-                    <p>J'aspire actuellement à devenir développeur avec le titre d'ingénieur informatique. Je n'ai pas de domaine précis encore bien défini, mais j'ai une préférence pour tout ce qui touche au Web. Je suis ouvert à l'idée de travailler dans un pays autre que la France (États-Unis d'Amérique et Norvège en tête)</p>
+                    <p>J'aspire actuellement à devenir développeur avec le titre d'ingénieur logiciel. Je n'ai pas de domaine précis encore bien défini, mais j'ai une préférence pour tout ce qui touche au Web. Je suis ouvert à l'idée de travailler dans un pays autre que la France (États-Unis d'Amérique et Norvège en tête)</p>
                 </div>
             </div>
         </section>
@@ -150,159 +158,59 @@
         </section>
         <section id="competences" class="competences">
             <div class="separate"></div>
-                <h1 class="center" id="competences">Compétences</h1>
-                <div class="row">
-                    <div class="row legende">
-                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                            <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
-                            </div>
-                            <center><h5>Débutant</h5></center>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                            <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-                            </div>
-                            <center><h5>Intermédiaire</h5></center>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                            <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                            </div>
-                            <center><h5>Très bon niveau</h5></center>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                            <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-                            </div>
-                            <center><h5>Confirmé</h5></center>
-                        </div>
+                <h1 class="center">Compétences</h1>
+                <div class="ListeCompetences">
+
+                    <div class="competenceUnique">
+                        <img src="images/java.png" alt="java">
+                        <h3>JAVA</h3>
                     </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 algo">
-                        <h1 class="center">Algorithmie</h1>
-
-                        <div class="container compCont">
-                            <div class="col-2">
-                            <img src="images/java.png" alt="java" class="imageComp">
-                            </div>
-                            <div class="col-10 progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="container compCont">
-                            <div class="col-2">
-                            <img src="images/c.png" alt="C" class="imageComp">
-                            </div>
-                            <div class="col-10 progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-                            </div>
-                        </div>
-
-                        <div class="container compCont">
-                            <div class="col-2">
-                            <img src="images/cobol.png" alt="cobol" class="imageComp">
-                            </div>
-                            <div class="col-10 progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
-                            </div>
-                        </div>
-
-                        <div class="container compCont">
-                            <div class="col-2">
-                            <img src="images/python.png" alt="python" class="imageComp">
-                            </div>
-                            <div class="col-10 progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
-                            </div>
-                        </div>
+                    <div class="competenceUnique">
+                        <img src="images/html.png" alt="html">
+                        <h3>HTML</h3>
                     </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 bdd">
-                        <h1 class="center">Bases de données</h1>
-
-                        <div class="container compCont">
-                            <div class="col-2">
-                            <img src="images/sql.png" alt="sql" class="imageComp">
-                            </div>
-                            <div class="col-10 progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="container compCont">
-                            <div class="col-2">
-                            <img src="images/j2e.png" alt="j2e" class="imageComp">
-                            </div>
-                            <div class="col-10 progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-                            </div>
-                        </div>
-
-                        <div class="container compCont">
-                            <div class="col-2">
-                            <img src="images/spring.png" alt="spring boot" class="imageComp">
-                            </div>
-                            <div class="col-10 progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-                            </div>
-                        </div>
-
+                    <div class="competenceUnique">
+                        <img src="images/css.png" alt="css">
+                        <h3>CSS</h3>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 web">
-                        <h1 class="center">Web</h1>
-
-                        <div class="container compCont">
-                        <div class="col-2">
-                            <img src="images/html.png" alt="html" class="imageComp">
-                        </div>
-                        <div class="col-10 progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
-                        </div>
-                        </div>
-
-                        <div class="container compCont">
-                        <div class="col-2">
-                            <img src="images/css.png" alt="css" class="imageComp">
-                        </div>
-                        <div class="col-10 progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
-                        </div>
-                        </div>
-
-                        <div class="container compCont">
-                            <div class="col-2">
-                                <img src="images/js.png" alt="js" class="imageComp">
-                            </div>
-                            <div class="col-10 progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-                            </div>
-                            </div>
-
+                    <div class="competenceUnique">
+                        <img src="images/bootstrap.png" alt="bootstrap">
+                        <h3>Bootstrap</h3>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 systeme">
-                        <h1 class="center">Système</h1>
-
-                        <div class="container compCont">
-                            <div class="col-2">
-                            <img src="images/shell.png" alt="shell" class="imageComp">
-                            </div>
-                            <div class="col-10 progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-                            </div>
-                        </div>
-
-                        <div class="container compCont">
-                            <div class="col-2">
-                            <img src="images/reseau.png" alt="reseau" class="imageComp">
-                            </div>
-                            <div class="col-10 progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-                            </div>
-                        </div>
-
+                    <div class="competenceUnique">
+                        <img src="images/sql.png" alt="sql">
+                        <h3>SQL</h3>
                     </div>
+                    <div class="competenceUnique">
+                        <img src="images/js.png" alt="JavaScript">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="competenceUnique">
+                        <img src="images/nodejs.png" alt="NodeJS">
+                        <h3>NodeJS</h3>
+                    </div>
+                    <div class="competenceUnique">
+                        <img src="images/spring.png" alt="SpringBoot">
+                        <h3>SpringBoot</h3>
+                    </div>
+                    <div class="competenceUnique">
+                        <img src="images/j2e.png" alt="j2e">
+                        <h3>J2E</h3>
+                    </div>
+                    <div class="competenceUnique">
+                        <img src="images/c.png" alt="C-lang">
+                        <h3>C</h3>
+                    </div>
+                    <div class="competenceUnique">
+                        <img src="images/python.png" alt="python">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="competenceUnique">
+                        <img src="images/cobol.png" alt="COBOL">
+                        <h3>COBOL</h3>
+                    </div>
+                    
+
                 </div>
         </section>
         <section id="experiences" class="experiences">

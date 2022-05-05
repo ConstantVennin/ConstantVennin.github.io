@@ -100,3 +100,10 @@ body .button-cv div:hover {
     text-decoration: none;
     font-weight: bold;
 }
+
+.bottom-2 {
+    bottom: 20px;
+} 
+.end-2 {
+    right: 20px;
+}

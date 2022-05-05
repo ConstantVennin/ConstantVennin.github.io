@@ -1,12 +1,50 @@
-body > .sections > .stickyMenu {
-    position: sticky;
-    top: 30px;
-    right: 30px;
-    z-index: 2000;
-    height: 0;
+@media only screen and (max-device-width: 673px)
+{
+    body > .sections > .hiddingBlock{
+        height: 100px;
+    }
 }
 
-body > .sections > .stickyMenu ul {
-    padding: 0;
-    margin: 0;
+@media only screen and (min-device-width: 673px)
+{
+    body > .sections > .hiddingBlock{
+        height: 50px;
+    }
+}
+
+body > .sections > .hiddingBlock{
+    z-index: 999;
+    width: 100%;
+    background-color: var(--cv-dark-red);
+    color: var(--cv-dark-red);
+    position: absolute;
+}
+
+body > .sections > .stickyMenu {
+    z-index: 900;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    background-color: var(--cv-dark-green);
+}
+
+body > .sections > .stickyMenu li {
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 8px;
+    color: #eee;
+    z-index: 910;
+    border-bottom: 4px solid var(--cv-dark-green);
+}
+
+body > .sections > .stickyMenu li:hover {
+    border-bottom: 4px solid #eee;
+}
+
+body > .sections > .stickyMenu a {
+    text-decoration: none;
 }
